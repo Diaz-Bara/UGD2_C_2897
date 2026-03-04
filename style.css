@@ -1,7 +1,8 @@
 :root{
-  --left: #4599FE;
-  --right: #EE0405;
-  --divider: #031E49;
+  --left: #9639df;
+  --right: #7f2ac8;
+  --divider: #a163d7; 
+ 
 
   --text: #111;
   --muted: rgba(0,0,0,.45);
@@ -16,22 +17,26 @@ html, body{ height: 100%; }
 
 body{
   font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  overflow-x: hidden;          /* biar bisa scroll ke bawah */
-  background: #000;            /* aman, tapi tidak mengganggu hero */
+  overflow-x: hidden;                    
 }
 
 /* ================= HERO ================= */
 .hero{
-  min-height: 100vh;           /* PENTING: min-height, bukan height */
+  min-height: 100vh;          
   width: 100%;
   display: grid;
   grid-template-columns: 55% 45%;
   position: relative;
-  overflow: hidden;            /* supaya divider tidak keluar area */
+  overflow: hidden;
+  background-image: url('background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .panel{
-  position: relative;          /* jangan pakai height:100% */
+  position: relative;         
 }
 
 .panel-left{
@@ -46,7 +51,7 @@ body{
 /* divider diagonal */
 .divider{
   position: absolute;
-  top: -20vh;                  /* dipanjangin biar tidak patah */
+  top: -10vh;                 
   bottom: -20vh;
   left: 50%;
   width: 300px;
@@ -103,8 +108,8 @@ body{
 }
 
 .social-btn{
-  width: 54px;
-  height: 54px;
+  width: 100px;
+  height: 50px;
   border-radius: 12px;
   background: var(--social-bg);
   display: grid;
@@ -117,8 +122,8 @@ body{
 }
 
 .social-btn svg{
-  width: 22px;
-  height: 22px;
+  width: 32px;
+  height: 32px;
 }
 
 .social-btn:hover{
@@ -165,7 +170,7 @@ body{
 }
 
 .photo{
-  width: min(420px, 36vw);
+  width: min(700px, 36vw);
   height: auto;
   display: block;
   filter: drop-shadow(0 28px 55px rgba(0,0,0,.6));
@@ -378,9 +383,9 @@ body{
 .project-thumb img{
   width: 100%;
   height: 100%;
-  object-fit: contain;   /* tidak zoom */
+  object-fit: contain;  
   display: block;
-  background: #111;      /* biar tidak kosong putih */
+  background: #111;      
 }
 
 .project-body{
