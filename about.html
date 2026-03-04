@@ -1,36 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>About Me</title>
-    <link rel="stylesheet" href="stylesheet.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me - Mr Budi Isnan</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<nav>
-    <div class="container nav-container">
-        <div class="logo">Diaz Bara</div>
-        <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
-    </div>
-</nav>
+  <main class="hero hero-about">
+    <!-- LEFT -->
+    <section class="panel panel-left">
+              <a href="home.html" class="logo" aria-label="Home">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 3 2 10h2v9h6v-6h4v6h6v-9h2L12 3Z"/>
+      </svg>
+    </a>
 
-<section class="page">
-    <div class="container">
-        <h1>About Me</h1>
-        <p>
-            Saya mahasiswa Sistem Informasi yang memiliki minat di bidang Web Development,
-            UI/UX, dan Database.
+      <div class="content">
+        <h1 class="page-title">About Me</h1>
+        <p class="page-desc">
+         Pria solo yang independen, bertanggung jawab, dan berkomitmen untuk terus berkembang dalam karier maupun kehidupan pribadi.
         </p>
-        <p>
-            Saya senang belajar teknologi baru dan terus mengembangkan kemampuan saya.
-        </p>
-    </div>
-</section>
+      </div>
+    </section>
 
-</body>
-</html>
+    <!-- RIGHT -->
+    <section class="panel panel-right">
+      <header class="nav">
+        <a class="active" href="aboutme.html">About me</a>
+        <a href="skill.html">Skills</a>
+        <a href="portofolio.html">Portfolio</a>
+        <a class="cta" href="contactme.html">CONTACT ME</a>
+      </header>
+
+      <div class="right-content">
+        <h2 class="right-title">WHO AM I ?</h2>
+        <p class="right-text">
+          Saya suka membangun UI yang clean, membuat komponen reusable,
+          dan memastikan website nyaman digunakan di mobile maupun desktop.
+          Saya juga terbiasa slicing design dari Figma menjadi HTML/CSS.
+        </p>
+
+        <div style="margin-top:22px; display:grid; gap:14px;">
+          <p class="right-text"><b>Alamat:</b> Indonesia</p>
+          <p class="right-text"><b>Email:</b> someone@example.com</p>
+          <p class="right-text"><b>Freelance:</b> Available</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"></div>
+  </main>
